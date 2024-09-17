@@ -1,0 +1,137 @@
+/* COMANDOS PARA EL CUERPO DE LA PÁGINA */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; 
+}
+
+/* COMANDOS PARA LA PARTE SUPERIOR DE LA PÁGINA (HEADER) */
+header {
+    background-color: #4CAF50;
+    color: white; 
+    padding: 10px 0; 
+    text-align: center;
+}
+
+header h1 {
+    margin: 0; 
+    font-size: 2em;
+}
+
+header .contener ul {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+header ul li img {
+    height: 60px;
+    width: auto; 
+}
+
+/* COMANDOS PARA LA BARRA DE NAVEGACIÓN */
+.menu {
+    background-color: #333;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu ul li a:hover {
+    background-color: #111;
+}
+
+.menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 200px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.menu ul li:hover > ul {
+    display: block; 
+}
+
+.menu ul li ul li a {
+    padding: 10px;
+    text-align: left; 
+}
+
+.menu ul li ul li a:hover {
+    background-color: #444; 
+}
+
+.menu ul li ul li ul {
+    display: none;
+    position: absolute;
+    left: 100%; 
+    top: 0; 
+}
+
+.especies-container:hover > ul {
+    display: block; /* Muestra el submenú de "Especies" al pasar el ratón */
+}
+
+.menu ul li ul li:hover ul {
+    display: block; /* Muestra el sub-submenú al pasar el ratón */
+}
+
+/* COMANDOS PARA LAS RESEÑAS DE INVESTIGADORES */
+h5 {
+    margin-top: 10px; 
+    font-size: 1em; 
+    color: #4CAF50; 
+}
+
+
+
+p {
+    font-size: 0.9em; 
+    color: #333; 
+    margin: 10px 0; 
+    padding: 0 20px; 
+}
+
+.reseña {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc; 
+    margin-top: 10px; 
+}
+
+.reseña h5 {
+    margin: 0; 
+    color: #4CAF50; 
+}
+
+.reseña p {
+    margin: 5px 0 0 0; 
+    color: #333; 
+}
