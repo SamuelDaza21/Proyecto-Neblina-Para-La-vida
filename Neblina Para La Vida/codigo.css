@@ -71,9 +71,18 @@ header ul li img {
 }
 
 .menu ul li a:hover {
-    background-color: #49484879;
+    background-color: #494848d7;
+    animation: filtro 1s ease-in-out;
 }
+@keyframes filtro{
+    from{
+        opacity: 0;
 
+    }
+    to{
+        opacity: 1;
+    }
+}
 
 .menu ul li ul {
     display: none;
@@ -115,39 +124,7 @@ header ul li img {
     display: block; /* Muestra el sub-submenú al pasar el ratón */
 }
 
-/* COMANDOS PARA LAS RESEÑAS DE INVESTIGADORES */
-h5 {
-    margin-top: 10px; 
-    font-size: 1em; 
-    color: #4CAF50; 
-}
 
-
-
-p {
-    font-size: 0.9em; 
-    color: #333; 
-    margin: 10px 0; 
-    padding: 0 20px; 
-}
-
-.reseña {
-    display: none;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc; 
-    margin-top: 10px; 
-}
-
-.reseña h5 {
-    margin: 0; 
-    color: #4CAF50; 
-}
-
-.reseña p {
-    margin: 5px 0 0 0; 
-    color: #333; 
-}
 /*CODIGO PARA EL BANNER*/
 section {
     position: relative;
@@ -185,4 +162,33 @@ section {
     font-size: 2rem; /* Tamaño del texto */
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7)); /* Sombra para mejor legibilidad */
     margin: 0; /* Elimina márgenes por defecto */
+}
+/*INFORMACION INVESTIGADOR Y ACERCA DE*/
+.investigadores {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.investigadores p, h3, h5 {
+    font-size: 20px;
+}
+
+/* Estilo para la sección de las imágenes */
+.graficas {
+    display: flex;
+    justify-content: center; /* Centrar imágenes horizontalmente */
+    gap: 10px; /* Espacio entre imágenes */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Hace que las imágenes se ajusten si exceden el contenedor */
+}
+
+.graficas img {
+    max-width: calc(33.33% - 10px); /* Limita el ancho de cada imagen a un 33% del contenedor, restando el gap */
+    flex-grow: 1;
+    height: auto;
+    object-fit: cover;
 }
